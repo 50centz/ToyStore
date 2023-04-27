@@ -11,10 +11,14 @@ public class ToyStore {
     }
 
 
-    public void getAllToys() {
-        for (Toy toy : array) {
-            System.out.println(toy.getClass().getSimpleName());
-            System.out.println(toy.showToy());
+    public static void getAllToys() {
+        if (array.size() == 0){
+            System.out.println("\nThere are no toys in the toy store, please add a toy\n");
+        }else{
+            for (Toy toy : array) {
+                System.out.println(toy.getClass().getSimpleName());
+                System.out.println(toy.showToy());
+            }
         }
     }
 
@@ -24,7 +28,7 @@ public class ToyStore {
         return toy;
     }
 
-    public  ArrayList<Toy> getArrayListToy(){
+    public static ArrayList<Toy> getArrayListToy(){
         return array;
     }
 }

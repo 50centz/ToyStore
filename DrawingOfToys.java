@@ -8,7 +8,7 @@ public class DrawingOfToys {
         
         int length = array.size();
         if ( length == 0){
-            System.out.println("There are no toys in the toy store, please add a toy");
+            System.out.println("\nThere are no toys in the toy store, please add a toy\n");
         }else{
             ChoosingAPrizeToy choosingAPrizeToy = new ChoosingAPrizeToy();
             int index = choosingAPrizeToy.choosingAPrizeToy(length);
